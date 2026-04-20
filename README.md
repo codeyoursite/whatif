@@ -12,6 +12,7 @@ What if you could tell whether others were telling the truth?
 What if you were immortal, but a highly intelligent snail was always chasing you—and if it touched you, you died?
 What if 1 person could know everything?
 What if your body could 'burn' non-food items for fuel?
+What if every person on Earth pointed a laser pointer at the Moon at once?
 ### Best so far:
 What if you put every single element on the periodic table into a ziploc bag with water?
 
