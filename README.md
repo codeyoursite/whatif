@@ -11,6 +11,7 @@ What if AI crashed out?
 What if you could tell whether others were telling the truth?
 What if you were immortal, but a highly intelligent snail was always chasing you—and if it touched you, you died?
 What if 1 person could know everything?
+What if your body could 'burn' non-food items for fuel?
 ### Best so far:
 What if you put every single element on the periodic table into a ziploc bag with water?
 
