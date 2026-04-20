@@ -9,7 +9,6 @@ What if we had to agree on the weather? (???)
 What if your browser history was the only thing used to write your CV?
 What if AI crashed out?
 What if you could tell whether others were telling the truth?
-What if you were immortal, but a highly intelligent snail was always chasing you—and if it touched you, you died?
 What if 1 person could know everything?
 What if your body could 'burn' non-food items for fuel?
 What if every person on Earth pointed a laser pointer at the Moon at once?
