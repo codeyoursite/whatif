@@ -13,5 +13,6 @@ What if every person on Earth pointed a laser pointer at the Moon at once?
 ### Best so far:
 What if you put every single element on the periodic table into a ziploc bag with water?
 What if 1 person could know everything?
+I think what if 1 person could know anything was good
 
 #### During the talk there could be interactivity whilst talking through it and the lights turn off (for example)
