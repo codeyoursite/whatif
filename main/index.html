@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Iframe Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="grid-container">
+        <!-- Repeat this block 6 times -->
+        <div class="grid-item" data-url="https://wikipedia.org">
+            <iframe src="https://wikipedia.org" scrolling="no"></iframe>
+            <div class="overlay">Click to Expand</div>
+        </div>
+        <div class="grid-item" data-url="https://openstreetmap.org">
+            <iframe src="https://openstreetmap.org" scrolling="no"></iframe>
+            <div class="overlay">Click to Expand</div>
+        </div>
+        <div class="grid-item" data-url="https://example.com">
+            <iframe src="https://example.com" scrolling="no"></iframe>
+            <div class="overlay">Click to Expand</div>
+        </div>
+        <div class="grid-item" data-url="https://wikipedia.org">
+            <iframe src="https://wikipedia.org" scrolling="no"></iframe>
+            <div class="overlay">Click to Expand</div>
+        </div>
+        <div class="grid-item" data-url="https://openstreetmap.org">
+            <iframe src="https://openstreetmap.org" scrolling="no"></iframe>
+            <div class="overlay">Click to Expand</div>
+        </div>
+        <div class="grid-item" data-url="https://example.com">
+            <iframe src="https://example.com" scrolling="no"></iframe>
+            <div class="overlay">Click to Expand</div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Modal -->
+    <div id="modal" class="modal">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <div class="modal-content">
+            <iframe id="modalIframe" src=""></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
