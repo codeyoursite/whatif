@@ -1,0 +1,103 @@
+:root {
+    --bg-color: #050505;
+    --card-bg: #111;
+    --accent: #00f2ff;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    height: 280px;
+    cursor: pointer;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover .iframe-container {
+    border-color: var(--accent);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.15);
+}
+
+.grid-item iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.grid-item:hover iframe {
+    opacity: 1;
+}
+
+/* Captures the click so the iframe doesn't swallow it */
+.click-capture {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 2;
+}
+
+/* Zoom Styles */
+.zoom-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0); /* Controlled by JS */
+    display: none;
+    z-index: 9999;
+    transition: background 0.4s ease;
+}
+
+.zoom-content {
+    position: fixed;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10000;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#active-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-btn {
+    position: fixed;
+    top: 15px; right: 25px;
+    font-size: 45px;
+    color: var(--accent);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.zoom-overlay.active .close-btn { opacity: 1; }

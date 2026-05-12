@@ -3,44 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Iframe Grid</title>
+    <title>Animated Dark Grid</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
 
     <div class="grid-container">
-        <!-- Repeat this block 6 times -->
-        <div class="grid-item" data-url="https://wikipedia.org">
-            <iframe src="https://wikipedia.org" scrolling="no"></iframe>
-            <div class="overlay">Click to Expand</div>
+        <div class="grid-item" data-url="../iframe/scenario1.html">
+            <div class="iframe-container">
+                <iframe src="../iframe/scenario1.html"></iframe>
+                <div class="click-capture"></div>
+            </div>
         </div>
-        <div class="grid-item" data-url="https://openstreetmap.org">
-            <iframe src="https://openstreetmap.org" scrolling="no"></iframe>
-            <div class="overlay">Click to Expand</div>
-        </div>
-        <div class="grid-item" data-url="https://example.com">
-            <iframe src="https://example.com" scrolling="no"></iframe>
-            <div class="overlay">Click to Expand</div>
-        </div>
-        <div class="grid-item" data-url="https://wikipedia.org">
-            <iframe src="https://wikipedia.org" scrolling="no"></iframe>
-            <div class="overlay">Click to Expand</div>
-        </div>
-        <div class="grid-item" data-url="https://openstreetmap.org">
-            <iframe src="https://openstreetmap.org" scrolling="no"></iframe>
-            <div class="overlay">Click to Expand</div>
+        <div class="grid-item" data-url="https://tabipsum.com/">
+            <div class="iframe-container">
+                <iframe src="https://tabipsum.com/"></iframe>
+                <div class="click-capture"></div>
+            </div>
         </div>
         <div class="grid-item" data-url="https://example.com">
-            <iframe src="https://example.com" scrolling="no"></iframe>
-            <div class="overlay">Click to Expand</div>
+            <div class="iframe-container">
+                <iframe src="https://example.com"></iframe>
+                <div class="click-capture"></div>
+            </div>
+        </div>
+        <div class="grid-item" data-url="https://wikipedia.org">
+            <div class="iframe-container">
+                <iframe src="https://wikipedia.org"></iframe>
+                <div class="click-capture"></div>
+            </div>
+        </div>
+        <div class="grid-item" data-url="https://tabipsum.com/">
+            <div class="iframe-container">
+                <iframe src="https://tabipsum.com/"></iframe>
+                <div class="click-capture"></div>
+            </div>
+        </div>
+        <div class="grid-item" data-url="https://example.com">
+            <div class="iframe-container">
+                <iframe src="https://example.com"></iframe>
+                <div class="click-capture"></div>
+            </div>
         </div>
     </div>
 
-    <!-- Fullscreen Modal -->
-    <div id="modal" class="modal">
+    <div id="zoom-overlay" class="zoom-overlay">
         <button class="close-btn" id="closeBtn">&times;</button>
-        <div class="modal-content">
-            <iframe id="modalIframe" src=""></iframe>
+        <div class="zoom-content" id="zoom-content">
+            <iframe id="active-iframe" src=""></iframe>
         </div>
     </div>
 
